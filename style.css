@@ -26,7 +26,6 @@
 
 header{
     grid-area: cabecera;
-    position: sticky;
     top: 0%;
 }
 
@@ -42,6 +41,12 @@ header{
     height: 8rem;
     width: 10rem;
 }
+.cabecera__imagen:hover{
+    transform: translate(30px, 30px) rotate(360deg);
+    border: solid 2px rgb(138, 136, 136);
+    transition: 2s;
+
+}
 
 .cabecera__nav {
     width: 60%;
@@ -52,7 +57,14 @@ header{
 
 .cabecera__nav__lista__home {
     text-decoration: none;
+    color: rgb(78, 78, 78);
 
+}
+.cabecera__nav__lista__home:hover{
+    transform: scale(2);
+    transition: 2s;
+    background-color: rgb(203, 188, 201);
+    border-radius: 1px rgb(138, 136, 136)
 }
 
 main {
@@ -69,8 +81,7 @@ main {
 .cuerpo__titulo__letras {
     text-align: center;
     margin: 2rem 0;
-    font-size: 4rem;
-}
+    font-size: 6rem;}
 
 .cuerpo__titulo__imagen {
     height: 35%;
@@ -91,9 +102,8 @@ main {
     display: flex;
     justify-content: end;
 }
-
 .presentacion__imagen {
-
+    height: 40%;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -151,21 +161,25 @@ main {
 }
 
 .video__iframe {
-    padding: 2rem;
+    
     margin: auto;
-    width: 60%;
+    height: 40rem;
+    width: 40%;
 }
 
 
 .pie {
     grid-area: pie;
     width: 100%;
-
 }
 .pie__imagen {
     height: 8rem;
-    width: 10rem;
+    width: 9rem;
     margin-left: 2rem;
+}
+.pie__imagen:hover{
+    transform: scale(2);
+    transition: 1s;
 }
 .nav-home {
     display: flex;
@@ -184,6 +198,11 @@ main {
 .pie__nav__lista {
     text-decoration: none;
 }
+.pie__nav__lista:hover{
+    transform: translate(-30px, -30px) rotate(-360deg) scale(2);
+    background-color: rgb(235, 171, 148);
+    transition: 2s;
+}
 
 
 .pie__navhome{
@@ -195,6 +214,12 @@ main {
     align-items: center;
     justify-content: space-evenly;
 
+}
+.pie__navhome__lista:hover{
+    transform: scale(2);
+    transition: 2s;
+    background-color: rgb(203, 188, 201);
+    border-radius: 1px rgb(138, 136, 136)
 }
 .pie__navhome__lista {
     text-decoration: none;
@@ -236,6 +261,7 @@ main{
 
 
 .cuerpo-nos__imagen {
+    height: 50%;
   width:  100%;
 }
 
@@ -480,7 +506,9 @@ main{
         font-size: 2rem;
     }
     
-    
+    .cuerpo__titulo__letras{
+        font-size: 4rem;
+    }
     .presentacion__imagen{
         display: flex;
         flex-direction: column;
