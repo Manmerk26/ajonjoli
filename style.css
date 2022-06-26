@@ -281,7 +281,7 @@ main{
 /*grid/flex/boxmod porfolio*/
 
 
-/*
+
 .grid-contenedor{
     display: grid;
     grid-template-columns: 100%;
@@ -302,36 +302,31 @@ main{
 }
 
 .cuerpo-porf__lista{
-    font-size: 4rem;
-    border: solid 1px rgb(138, 136, 136);
-    height: 140rem;
-    width: 85rem;
-    padding: 0rem;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
-    background-color: rgb(235, 171, 148);
-}
-.cuerpo-porf__lista__item1-imagen,.cuerpo-porf__lista__item2-imagen,.cuerpo-porf__lista__item3-imagen,.cuerpo-porf__lista__item4-imagen,.cuerpo-porf__lista__item5-imagen,.cuerpo-porf__lista__item6-imagen,.cuerpo-porf__lista__item7-imagen,.cuerpo-porf__lista__item8-imagen{
-    height: 28rem;
-    width: 25rem;
-}
-.cuerpo-porf__lista__item1,.cuerpo-porf__lista__item2,.cuerpo-porf__lista__item3,.cuerpo-porf__lista__item4,.cuerpo-porf__lista__item5,.cuerpo-porf__lista__item6,.cuerpo-porf__lista__item7,.cuerpo-porf__lista__item8{
-    border: solid 1px rgb(138, 136, 136);
+    font-size: 3rem;
+    
+    height: auto;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+   
 }
-
+.cuerpo-porf__lista__item{
+    margin-top: 1rem;
+    border: solid 2px rgb(138, 136, 136);
+}
+.cuerpo-porf__lista__item img{
+    height: 30rem;
+    width: 40rem;
+}
 
 
 
 /*grid/flex/boxmod contacto*/
 
-/*
+
 .grid-contenedor{
     display: grid;
     grid-template-columns: 100%;
@@ -356,38 +351,29 @@ main{
 }
 .cuerpo-contact1{
     padding: 3rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
-.cuerpo-contact__izq{
-    height: 50rem;
-    width: 50rem;
+.cuerpo-contact__izq img{
+    height: 100%;
+    width: 100%;
 }
-.cuerpo-contact__imagen{
-    height: 50rem;
-    width:50rem;
+
     
-}
 
 
 .cuerpo-contact__der{
+    height: auto;
+    width: 50%;
     margin: auto;
-    height: 50rem;
-    width: 45rem;
-}
-
-.cuerpo-contact__lista{
-    margin: auto;
-    font-size: 3rem;
-    list-style: none;
-    align-self: center;
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    
 }
-.cuerpo-contact__lista-instagram,.cuerpo-contact__lista-facebook,.cuerpo-contact__lista-email{
+.cuerpo-contact__lista{
     text-decoration: none;
 }
 .boton-enviar{
@@ -400,11 +386,7 @@ main{
     margin: auto;
 
 }
-.cuerpo-contact__lista-comentarios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 
 
@@ -412,7 +394,7 @@ main{
 
 /*grid/flex/boxmod mas*/
 
-/*
+
 
 .grid-contenedor{
     display: grid;
@@ -437,85 +419,52 @@ main{
    align-items: center;
 }
 .cuerpo-mas__imagen{
-    /*border: solid 1px black;*/
-   /* padding: 2rem;
+    
     margin: auto;
-    height: 40rem;
-    width: 70rem;
+    height: 40%;
+    width: 100%;
     display: flex;
 }
 .cuerpo-mas__lista{
-    list-style: none;
-    padding-bottom: 13rem;
-    padding-top: 3rem;
-    height: 20rem;
-    width: 80rem;
-    margin: auto;
+    padding-top: 7rem;
+    height: 50%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 40rem;
+    grid-template-rows: 35rem;
     grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
+    grid-row-gap: 0rem;
     
 }
-
-.cuerpo-mas__lista-preguntas__titulo{
+.cuerpo-mas__lista-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuerpo-mas__lista-item h2{
+    padding-top: 2rem;
     font-size: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cuerpo-mas__lista-preguntas{
-    display: flex;
-    flex-direction: column;
-}
-
-.cuerpo-mas__lista-preguntas__texto{
-    margin: auto;
+.cuerpo-mas__lista-item p{
+    padding-top: 2rem;
     height: 20rem;
     width: 20rem;
     font-size: 2rem;
     text-align: center;
 }
-
-
-.cuerpo-mas__lista-pago__titulo{
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cuerpo-mas__lista-pago__texto{
-    margin: auto;
-    height: 20rem;
-    width: 20rem;
-    font-size: 2rem;
-    text-align: center;
-}
-
-
-
-
-
-.cuerpo-mas__lista-envio__titulo{
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cuerpo-mas__lista-envio__texto{
-    margin: auto;
-    height: 20rem;
-    width: 20rem;
-    font-size: 2rem;
-    text-align: center;
-}*/
 
 
 
 
 @media screen and (max-width: 768px){
+
+    /*index*/
+
+
     .cabecera{
         width: 100%;
         padding-top: 4rem ;
@@ -553,6 +502,10 @@ main{
     .video__iframe{
         background-color: rgb(138, 136, 136);
     }
+
+
+    /*nosotros*/
+
     .cuerpo-nos__contenedor{
         width: 80%;
         display: flex;
@@ -564,37 +517,51 @@ main{
         border: solid 2px black;
         background-color: rgb(138, 136, 136);
     }
-}
-     /* .cuerpo-porf{
-          background-color: grey;
-    }
-    .cuerpo-contact__titulo{
-        margin: auto;
-        width: 70rem;
-        border: solid 1px black;
-        background-color: rgb(235, 171, 148);       
-    }
-    .cuerpo-contact1{
-        border: solid 3px black; 
+
+   
+    /*porfolio*/
+    .cuerpo-porf__lista__item img{
+        height: 15rem;
+        width: 20rem;
         
     }
+
+
+    /*contacto*/
+    
+    .cuerpo-contact1{ 
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+    }
+    .cuerpo-contact__izq img{
+        width: 100%;
+    }
+    .cuerpo-contact__der{
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+
+
+    /*mas*/
+    
     .cuerpo-mas__lista{
-        height: auto;
+        padding-top: 1rem;  
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border: solid 2px black;
         background-color: grey
     }
-    .cuerpo-mas__lista-preguntas{
-        height: 30rem;
-        border: solid 2px black;
+    .cuerpo-mas__lista-item{
+        height: 30%;
+        
     }
-    .cuerpo-mas__lista-pago{
-        height: 30rem;
-        border: solid 2px black;
+    .cuerpo-mas__lista-item p{
+        font-size: 25px;
     }
-    .cuerpo-mas__lista-envio{
-        height: 30rem;
-        border: solid 2px black;
-    }
-
-
-}*/
+   
+}
