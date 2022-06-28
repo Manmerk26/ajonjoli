@@ -2,7 +2,6 @@
 
 * {
     font-family: 'Rouge Script', cursive;
-    ;
     background-color: rgb(250, 240, 227);
     color: rgb(78, 78, 78);
     margin: 0%;
@@ -533,7 +532,9 @@ main{
 
 
     /*nosotros*/
-
+    .cuerpo-nos__imagen{
+        height: 20rem;
+    }
     .cuerpo-nos__contenedor{
         width: 80%;
         display: flex;
@@ -544,7 +545,9 @@ main{
         flex-direction: column;
         border: solid 2px black;
         background-color: rgb(138, 136, 136);
+        
     }
+    .cuerpo-nos__texto 
 
    
     /*porfolio*/
