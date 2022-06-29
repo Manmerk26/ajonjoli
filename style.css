@@ -46,6 +46,9 @@ header{
     transition: 2s;
 
 }
+.navbar{
+    background-color: rgb(250, 240, 227);
+}
 
 .cabecera__nav {
     width: 60%;
@@ -83,13 +86,17 @@ main {
     font-size: 6rem;}
 
 .cuerpo__titulo__imagen {
-    height: 35%;
-    width: 100%;
+    height: 30%;
+    width: 80%;
     margin: auto;
     margin-bottom: 1rem;
 }
+.card{
+    margin-top: 2%;
+}
 
-.presentacion__titulo {
+
+/*.presentacion__titulo {
     font-size: 4rem;
     text-align: center;
     margin: 2rem 0;
@@ -117,14 +124,18 @@ main {
     padding: 2rem;
 }
 
-.productos__titulo {
+*/.productos__titulo {
 
     font-size: 4rem;
     text-align: center;
     margin: 2rem 0;
 }
 
-.productos__lista {
+
+
+
+
+/*.productos__lista {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -151,7 +162,7 @@ main {
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
-}
+}*/
 
 .video__titulo {
     font-size: 3rem;
@@ -162,8 +173,8 @@ main {
 .video__iframe {
     
     margin: auto;
-    height: 40rem;
-    width: 40%;
+    height: 30rem;
+    width: 30%;
 }
 
 
@@ -171,6 +182,8 @@ main {
     grid-area: pie;
     width: 100%;
 }
+
+
 .pie__imagen {
     height: 8rem;
     width: 9rem;
@@ -196,6 +209,7 @@ main {
 }
 .pie__nav__lista {
     text-decoration: none;
+    color: rgb(78, 78, 78);
 }
 .pie__nav__lista:hover{
     transform: translate(-30px, -30px) rotate(-360deg) scale(2);
@@ -222,6 +236,7 @@ main {
 }
 .pie__navhome__lista {
     text-decoration: none;
+    color: rgb(78, 78, 78);
 }
 .pie__texto-ubic {
     font-size: 2rem;
@@ -260,11 +275,20 @@ main{
 
 
 .cuerpo-nos__imagen {
-    height: 50%;
-  width:  100%;
+    height: 30%;
+  width:  80%;
+}
+.carousel-item img{
+    margin: auto;
+    height: 35em;
+    width: 60%;
+   
+}
+.dropdown-menu {
+    background-color: rgb(250, 240, 227);
 }
 
-.cuerpo-nos__contenedor{
+/*.cuerpo-nos__contenedor{
     
     padding-top: 7rem;
     height: 50%;
@@ -300,7 +324,7 @@ main{
 .cuerpo-nos__texto p{
     background-color: rgb(235, 171, 148);
     font-size: 25px;
-}
+}*/
 
 
 /*grid/flex/boxmod porfolio*/
