@@ -2,18 +2,20 @@
 
 * {
     font-family: 'Rouge Script', cursive;
-    ;
-    background-color: rgb(250, 240, 227);
-    color: rgb(78, 78, 78);
+    color: rgb(53, 28, 28);
     margin: 0%;
     padding: 0%;
+    
 }
 
 
-/*grid/flex/boxmod index*/
+/*index*/
 
 
 .grid-contenedor{
+    background-image: url("/imagenes/fondo-abstracto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 0,5fr auto 1fr;
@@ -26,12 +28,11 @@
 
 header{
     grid-area: cabecera;
-    top: 0%;
+    background-color: rgb(241, 234, 232);
 }
 
 .cabecera {
     width: 100%;
-    font-size: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -49,6 +50,7 @@ header{
 }
 
 .cabecera__nav {
+    font-size: 2rem;
     width: 60%;
     display: flex;
     align-items: center;
@@ -93,7 +95,7 @@ main {
 .presentacion__titulo {
     font-size: 4rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem;
 }
 
 .presentacion__imagenfoto {
@@ -122,7 +124,7 @@ main {
 
     font-size: 4rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem;
 }
 
 .productos__lista {
@@ -156,7 +158,6 @@ main {
 
 .video__titulo {
     font-size: 3rem;
-    text-align: justify;
     padding: 1rem;
 }
 
@@ -235,7 +236,7 @@ main {
     width: 100%;
 }
 
-/*grid/flex/boxmod nosotros*/
+/* nosotros*/
 
 
 .grid-contenedor{
@@ -261,14 +262,13 @@ main{
 
 
 .cuerpo-nos__imagen {
-    height: 50%;
-  width:  100%;
+    height: 35%;
+    width:  100%;
 }
 
 .cuerpo-nos__contenedor{
     
-    padding-top: 7rem;
-    height: 50%;
+    
     width: 100%;
     margin: auto; 
     display: grid;
@@ -281,6 +281,7 @@ main{
 }
 
 .cuerpo-nos__texto{
+    border: 2px solid rgb(53, 28, 28);
     padding-top: 2rem;
     font-size: 3rem;
     align-self: center;
@@ -304,7 +305,7 @@ main{
 }
 
 
-/*grid/flex/boxmod porfolio*/
+/*porfolio*/
 
 
 
@@ -350,7 +351,7 @@ main{
 
 
 
-/*grid/flex/boxmod contacto*/
+/*contacto*/
 
 
 .grid-contenedor{
@@ -371,9 +372,9 @@ main{
 .cuerpo-contact__titulo{
     font-size: 5rem;
     padding: 4rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cuerpo-contact1{
     padding: 3rem;
@@ -390,9 +391,7 @@ main{
 
 
 .cuerpo-contact__der{
-    height: auto;
     width: 50%;
-    margin: auto;
     font-size: 2rem;
     display: flex;
     flex-direction: column;
@@ -404,13 +403,11 @@ main{
 }
 .boton-enviar{
     font-size: 2rem;
-    height: 2rem;
+    justify-content: center;
     width: 5rem;
-    background-color: rgb(235, 171, 148);
+    background-color: rgb(241, 234, 232);
     display: flex;
-    align-items: baseline;
     margin: auto;
-
 }
 
 
@@ -418,7 +415,7 @@ main{
 
 
 
-/*grid/flex/boxmod mas*/
+/*mas*/
 
 
 
@@ -440,20 +437,18 @@ main{
 .cuerpo-mas__titulo{
     font-size: 5rem;
     padding: 3rem;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .cuerpo-mas__imagen{
     
     margin: auto;
     height: 40%;
-    width: 100%;
+    width: 80%;
     display: flex;
 }
 .cuerpo-mas__lista{
-    padding-top: 7rem;
-    height: 50%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -485,8 +480,9 @@ main{
 
 
 
+/*media queries*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 780px){
 
     /*index*/
 
@@ -515,7 +511,7 @@ main{
         margin-top: 2rem;
         padding-top: 2rem;
         border: solid 2px rgb(138, 136, 136);
-        background-color: rgb(235, 171, 148);
+        background-color: rgb(218, 185, 205);
     }
     
     
@@ -530,7 +526,16 @@ main{
     .video__iframe{
         background-color: rgb(138, 136, 136);
     }
-
+    .nav-home{
+        margin-top: 1rem;
+    }
+    .pie__imagen{
+        height: 6rem;
+    }
+    .pie__nav{
+        margin-right: 2rem;
+    }
+    
 
     /*nosotros*/
 
@@ -539,11 +544,16 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 10rem;
     }
     .cuerpo-nos__texto{
         flex-direction: column;
         border: solid 2px black;
-        background-color: rgb(138, 136, 136);
+        background-color: rgb(235, 171, 148);
+        
+    }
+    .cuerpo-nos__texto p{
+        font-size: 15px;
     }
 
    
@@ -566,6 +576,7 @@ main{
         width: 100%;
     }
     .cuerpo-contact__der{
+        margin-left: 27.5%;
         font-size: 25px;
         text-align: center;
     }
@@ -574,15 +585,15 @@ main{
 
 
     /*mas*/
-    
+    .cuerpo-mas__imagen{
+        height: 30rem;
+    }
     .cuerpo-mas__lista{
-        padding-top: 1rem;  
+        margin-top: 1rem; 
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: solid 2px black;
-        background-color: grey
     }
     .cuerpo-mas__lista-item{
         height: 30%;
