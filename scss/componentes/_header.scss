@@ -1,0 +1,40 @@
+
+
+/*header*/
+
+    header{
+        grid-area: cabecera;
+        background-color: $bg-princ;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+                    
+                    .cabecera__imagen {
+                        height: 8rem;
+                        width: 10rem;
+                        &:hover{
+                            transform: translate(30px, 30px) rotate(360deg);
+                            border: $border-hover;
+                            transition: 2s;
+                            }
+                    }
+                    .cabecera__nav {
+                        font-size: 2rem;
+                        width: 60%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        .cabecera__nav__lista__home {
+                            text-decoration: none;
+                            color: $color-texto;
+                                &:hover{
+                                    transform: scale(2);
+                                    transition: 2s;
+                                    background-color: $bg-princ;
+                                    border-radius: 1px rgb(138, 136, 136)
+                                }
+                        }
+                    }
+        }   
+    
