@@ -34,7 +34,7 @@
                 }
                  a{text-decoration: none;
                     &:hover{
-                            transform: translate(-30px, -30px) rotate(-360deg) scale(2);
+                            transform: translate(-30px, -30px) scale(2);
                             background-color: $bg-princ;
                             transition: 2s;
                         }

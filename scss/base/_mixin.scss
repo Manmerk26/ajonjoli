@@ -1,0 +1,10 @@
+
+@mixin grid ($display, $grid-template-columns, $grid-template-rows){
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    grid-template-rows: $grid-template-rows;
+}
+
+.grid-contenedor{
+    @include grid(grid, 100%, 0,5fr auto 1fr );
+}

@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desciption" content="Creaciones Ajonjoli es un sitio donde plasmamos tus ideas en papel/imagen">
+    <meta name="keywords" content="diseño grafico,diseño digital,impresiones,cumpleaños,casamientos,bautismos,babyshowers,gigantografia">
+
+    <!--opengraph-->
+    <meta property="og:title" content="Creaciones Ajonjoli">
+    <meta property="og:" content="Creaciones Ajonjoli es un sitio donde plasmamos tus ideas en papel/imagen" >
+    <meta property="og:" content="url()"><!--aca va la img del logo pero todavia no esta subida la pagina-->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Ajonjoli Creaciones</title>
+    <title>Creaciones Ajonjoli</title>
 </head>
 
 <body  class="grid-contenedor">
@@ -49,10 +56,14 @@
                 <a href="mailto:brendavera537@gmail.com" class="cuerpo-contact__lista">Email</a>
 
             Comentarios <!--Dejo un comentario: no aprendimos formularios, asi que no se si esta bien realizado(lo saque del contenido de la clase 2 pero no se bien su aplicacion)-->
-                <form action="php"method="get">   
-                 Nombre <input type="text" name="nombre" id="name"> Email   <input type="text" name="Email" id="Email"><br><textarea name="comente aqui" id="texto" cols=85" rows="10"> comente aqui</textarea>
-                  <input type="submit" value="Enviar" class="boton-enviar"> </form>
-  
+               <div class="formulario"> <form action="php"method="get">   
+                <div class="nombre"><label for="name"> Nombre </label>
+                 <input type="text" name="nombre" id="name" placeholder="nombre"></div>
+                 <div class="email"><label for="name"> Email </label> 
+                <input type="text" name="Email" id="Email" placeholder="email"></div>
+                 <div class="comentario"><textarea name="comente aqui" id="texto" cols=85" rows="10">comente aqui</textarea>
+                  <input type="submit" value="Enviar" class="boton-enviar"> </div></form>
+                </div>
             </div>   
         </div>  
     </main>   

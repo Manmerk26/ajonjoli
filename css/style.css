@@ -6,6 +6,7 @@
   padding: 0%;
 }
 
+/*@import "base/mixin";*/
 /*header*/
 header {
   grid-area: cabecera;
@@ -315,7 +316,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   align-items: center;
 }
 .grid-contenedor main .cuerpo-contact1 {
-  padding: 3rem;
+  padding-bottom: 3rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -354,7 +355,13 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor main .cuerpo-contact1 .cuerpo-contact__der .cuerpo-contact__lista {
   text-decoration: none;
 }
-.grid-contenedor main .cuerpo-contact1 .boton-enviar {
+.grid-contenedor main .cuerpo-contact1 .formulario .nombre {
+  text-align: center;
+}
+.grid-contenedor main .cuerpo-contact1 .formulario .email {
+  text-align: center;
+}
+.grid-contenedor main .cuerpo-contact1 .formulario .boton-enviar {
   font-size: 2rem;
   justify-content: center;
   width: 5rem;
@@ -483,7 +490,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   text-decoration: none;
 }
 .pie .nav-home .pie__nav a:hover {
-  transform: translate(-30px, -30px) rotate(-360deg) scale(2);
+  transform: translate(-30px, -30px) scale(2);
   background-color: rgb(241, 234, 232);
   transition: 2s;
 }
