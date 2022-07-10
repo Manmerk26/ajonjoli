@@ -6,6 +6,20 @@
   padding: 0%;
 }
 
+.grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-contenedor main .cuerpo-contact1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-contenedor main .cuerpo-contact1 .formulario .email, .grid-contenedor main .cuerpo-contact1 .formulario .nombre, .grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto, .grid-contenedor main .productos__lista .productos__lista__contenedor p, .grid-contenedor main .productos__titulo, .grid-contenedor main .presentacion__imagen .presentacion__imagentexto, .grid-contenedor main .presentacion__titulo, .grid-contenedor main .cuerpo__titulo__letras {
+  text-align: center;
+}
+
 /*header*/
 header {
   grid-area: cabecera;
@@ -80,7 +94,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   align-items: center;
 }
 .grid-contenedor main .cuerpo__titulo__letras {
-  text-align: center;
   margin: 2rem 0;
   font-size: 6rem;
 }
@@ -97,7 +110,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .presentacion__titulo {
   font-size: 4rem;
-  text-align: center;
   margin: 2rem;
 }
 .grid-contenedor main .presentacion__imagen {
@@ -126,12 +138,10 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .presentacion__imagen .presentacion__imagentexto {
   font-size: 2rem;
-  text-align: center;
   padding: 2rem;
 }
 .grid-contenedor main .productos__titulo {
   font-size: 4rem;
-  text-align: center;
   margin: 2rem;
 }
 .grid-contenedor main .productos__lista {
@@ -161,7 +171,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .productos__lista .productos__lista__contenedor p {
   font-size: 2rem;
-  text-align: center;
   padding: 1rem;
 }
 .grid-contenedor main .video__titulo {
@@ -227,13 +236,10 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   padding-top: 2rem;
   align-self: center;
   background-color: rgb(241, 234, 232);
-  display: flex;
-  flex-direction: column;
   margin: auto;
   height: 90%;
   width: 95%;
   font-size: 2rem;
-  text-align: center;
 }
 @media screen and (max-width: 780px) {
   .grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto {
@@ -316,8 +322,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor main .cuerpo-contact1 {
   padding-bottom: 3rem;
   width: 100%;
-  display: flex;
-  flex-direction: row;
 }
 @media screen and (max-width: 780px) {
   .grid-contenedor main .cuerpo-contact1 {
@@ -352,12 +356,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .cuerpo-contact1 .cuerpo-contact__der .cuerpo-contact__lista {
   text-decoration: none;
-}
-.grid-contenedor main .cuerpo-contact1 .formulario .nombre {
-  text-align: center;
-}
-.grid-contenedor main .cuerpo-contact1 .formulario .email {
-  text-align: center;
 }
 .grid-contenedor main .cuerpo-contact1 .formulario .boton-enviar {
   font-size: 2rem;

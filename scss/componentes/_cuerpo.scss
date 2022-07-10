@@ -1,7 +1,5 @@
 
 
-
-
 /*index*/
 .grid-contenedor{
     background-image: url("/imagenes/fondo-abstracto.png");
@@ -17,7 +15,7 @@
         width: 100%;
         @include flex(column, center);
             .cuerpo__titulo__letras {
-                text-align: center;
+                @extend %textocent;
                 margin: 2rem 0;
                 font-size: map-get($font-titulo, h1);
                 @media screen and (max-width: 780px){
@@ -32,7 +30,7 @@
             }
             .presentacion__titulo {
                     font-size: map-get($font-titulo, h2);
-                    text-align: center;
+                    @extend %textocent;
                     margin: 2rem;
             }
             .presentacion__imagen{ 
@@ -56,13 +54,13 @@
                     }    
                     .presentacion__imagentexto {
                         font-size: map-get($font-parrafo,secundario) ;
-                        text-align: center;
+                        @extend %textocent;
                         padding: 2rem;
                     }        
             }
             .productos__titulo {
                 font-size: map-get($font-titulo,h2);
-                text-align: center;
+                @extend %textocent;
                 margin: 2rem;
             }
             .productos__lista {
@@ -84,7 +82,7 @@
                     }
                     p{
                         font-size: map-get($font-parrafo, secundario);
-                        text-align: center;
+                        @extend %textocent;
                         padding: 1rem;
                     }  
                 }
@@ -144,13 +142,12 @@
                 padding-top: 2rem;
                 align-self: center;
                 background-color: $bg-princ;
-                display: flex;
-                flex-direction: column;
+                @extend %flexcol;
                 margin: auto;
                 height: 90%;
                 width: 95%;
                 font-size: map-get($font-parrafo,secundario) ;
-                text-align: center;
+                @extend %textocent;
                 @media screen and (max-width: 780px){
                     flex-direction: column;
                     border: solid 2px black;
@@ -228,8 +225,7 @@
         .cuerpo-contact1{
             padding-bottom: 3rem;
             width: 100%;
-            display: flex;
-            flex-direction: row;
+            @extend %flexrow;
             @media screen and (max-width: 780px){ 
                 flex-direction: column;
                 margin: 0%;
@@ -258,10 +254,10 @@
             }
             .formulario{
                 .nombre{
-                    text-align: center;
+                    @extend %textocent;
                 }
                 .email{
-                    text-align: center;
+                    @extend %textocent;
                 }
                 .boton-enviar{
                         font-size: map-get($font-parrafo, secundario);

@@ -9,10 +9,11 @@
     padding: 0%;
     
 }
-@import "base/extends";
+
 @import "base/variables";
 @import "base/mapas";
 @import "base/mixin";
+@import "base/extends";
 @import "componentes/header";
 @import "componentes/cuerpo";
 @import "componentes/footer";

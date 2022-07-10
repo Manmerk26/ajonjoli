@@ -1,9 +1,17 @@
 
 
 
-%grid-contenedor{
-    grid-template-areas: 
-    "cabecera "
-    "main "
-    "pie ";
+%flexcol{
+    display: flex;
+    flex-direction: column;
+    }
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
 }
+
+%textocent{
+    text-align: center;
+}
+
