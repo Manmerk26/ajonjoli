@@ -6,7 +6,6 @@
   padding: 0%;
 }
 
-/*@import "base/mixin";*/
 /*header*/
 header {
   grid-area: cabecera;
@@ -70,7 +69,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   background-size: cover;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0, 5fr auto 1fr;
+  grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera " "main " "pie ";
 }
 .grid-contenedor main {
@@ -166,7 +165,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   padding: 1rem;
 }
 .grid-contenedor main .video__titulo {
-  font-size: 3rem;
+  font-size: 4rem;
   padding: 1rem;
 }
 @media screen and (max-width: 780px) {
@@ -189,7 +188,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0, 5fr auto 1fr;
+  grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera" "main-nos" "pie";
 }
 .grid-contenedor main {
@@ -226,7 +225,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto {
   border: 2px solid rgb(53, 28, 28);
   padding-top: 2rem;
-  font-size: 3rem;
   align-self: center;
   background-color: rgb(241, 234, 232);
   display: flex;
@@ -261,14 +259,14 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0, 5fr auto 1fr;
+  grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera" "main-porf" "pie";
 }
 .grid-contenedor main {
   grid-area: main-porf;
 }
 .grid-contenedor main .cuerpo-porf__titulo {
-  font-size: 5rem;
+  font-size: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -302,14 +300,14 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0, 5fr auto 1fr;
+  grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera" "main-contact" "pie";
 }
 .grid-contenedor main {
   grid-area: main-contact;
 }
 .grid-contenedor main .cuerpo-contact__titulo {
-  font-size: 5rem;
+  font-size: 6rem;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -374,14 +372,14 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 .grid-contenedor {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 0, 5fr auto 1fr;
+  grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera" "main-mas" "pie";
 }
 .grid-contenedor main {
   grid-area: main-mas;
 }
 .grid-contenedor main .cuerpo-mas__titulo {
-  font-size: 5rem;
+  font-size: 6rem;
   padding: 3rem;
   display: flex;
   flex-direction: column;

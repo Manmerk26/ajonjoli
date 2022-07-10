@@ -1,10 +1,12 @@
 
-@mixin grid ($display, $grid-template-columns, $grid-template-rows){
+@mixin grid ($display, $columns, $rows){
     display: $display;
-    grid-template-columns: $grid-template-columns;
-    grid-template-rows: $grid-template-rows;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
 }
 
-.grid-contenedor{
-    @include grid(grid, 100%, 0,5fr auto 1fr );
+@mixin flex ($direccion, $align){
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $align;
 }
