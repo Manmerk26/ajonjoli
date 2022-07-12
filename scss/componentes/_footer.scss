@@ -31,6 +31,7 @@
                 margin-right: 7rem;
                 @media screen and (max-width: 780px){
                     margin-right: 2rem;
+                    font-size: 20px;
                 }
                  a{text-decoration: none;
                     &:hover{
@@ -59,11 +60,17 @@
                     background-color: $bg-princ;
                     border-radius: 1px rgb(138, 136, 136)
                     }
+                    @media screen and (max-width: 780px){
+                        font-size: 20px;
+                    }
               }
         }
         .pie__texto-ubic {
             font-size: 2rem;
             width: 100%;
            text-align: center;
+           @media screen and (max-width: 780px){
+            font-size: 20px;
+           }
         }
 }

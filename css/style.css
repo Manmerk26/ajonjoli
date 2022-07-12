@@ -62,7 +62,7 @@ header .cabecera__nav {
 }
 @media screen and (max-width: 780px) {
   header .cabecera__nav {
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 header .cabecera__nav .cabecera__nav__lista__home {
@@ -108,6 +108,11 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   margin: auto;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 780px) {
+  .grid-contenedor main .cuerpo__titulo__imagen {
+    height: 25rem;
+  }
+}
 .grid-contenedor main .presentacion__titulo {
   font-size: 4rem;
   margin: 2rem;
@@ -122,10 +127,10 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 @media screen and (max-width: 780px) {
   .grid-contenedor main .presentacion__imagen {
+    height: 20%;
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    padding-top: 2rem;
     border: solid 2px rgb(138, 136, 136);
     background-color: rgb(218, 185, 205);
   }
@@ -138,7 +143,6 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .presentacion__imagen .presentacion__imagentexto {
   font-size: 2rem;
-  padding: 2rem;
 }
 .grid-contenedor main .productos__titulo {
   font-size: 4rem;
@@ -189,6 +193,8 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 @media screen and (max-width: 780px) {
   .grid-contenedor main .video__iframe {
+    height: 20%;
+    width: 60%;
     background-color: rgb(138, 136, 136);
   }
 }
@@ -480,6 +486,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 @media screen and (max-width: 780px) {
   .pie .nav-home .pie__nav {
     margin-right: 2rem;
+    font-size: 20px;
   }
 }
 .pie .nav-home .pie__nav a {
@@ -508,10 +515,20 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   background-color: rgb(241, 234, 232);
   border-radius: 1px rgb(138, 136, 136);
 }
+@media screen and (max-width: 780px) {
+  .pie .pie__navhome .pie__navhome__lista {
+    font-size: 20px;
+  }
+}
 .pie .pie__texto-ubic {
   font-size: 2rem;
   width: 100%;
   text-align: center;
+}
+@media screen and (max-width: 780px) {
+  .pie .pie__texto-ubic {
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
