@@ -293,6 +293,11 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 780px) {
+  .grid-contenedor main .cuerpo-porf__lista {
+    font-size: 2rem;
+  }
+}
 .grid-contenedor main .cuerpo-porf__lista .cuerpo-porf__lista__item {
   margin-top: 1rem;
   border: solid 2px rgb(138, 136, 136);
@@ -489,13 +494,9 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
     font-size: 20px;
   }
 }
-.pie .nav-home .pie__nav a {
-  text-decoration: none;
-}
-.pie .nav-home .pie__nav a:hover {
-  transform: translate(-30px, -30px) scale(2);
-  background-color: rgb(241, 234, 232);
-  transition: 2s;
+.pie .nav-home .pie__nav a img {
+  height: 3rem;
+  width: 3rem;
 }
 .pie .pie__navhome {
   font-size: 2rem;

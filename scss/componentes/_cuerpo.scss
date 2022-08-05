@@ -192,7 +192,10 @@
             height: auto;
             width: 85%;
             @include flex(column, center);
-            text-align: center;  
+            text-align: center;
+            @media screen and (max-width: 780px){
+                font-size: map-get($font-parrafo,secundario);
+            }
             .cuerpo-porf__lista__item{
                 margin-top: 1rem;
                 border: $border-hover;
