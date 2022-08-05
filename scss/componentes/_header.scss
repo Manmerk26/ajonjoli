@@ -42,9 +42,8 @@
                             text-decoration: none;
                             color: $color-texto;
                                 &:hover{
-                                    transform: scale(2);
+                                    transform: scale(1.25);
                                     transition: 2s;
-                                    background-color: $bg-princ;
                                     border-radius: 1px rgb(138, 136, 136)
                                 }
                         }

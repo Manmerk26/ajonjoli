@@ -70,9 +70,8 @@ header .cabecera__nav .cabecera__nav__lista__home {
   color: rgb(53, 28, 28);
 }
 header .cabecera__nav .cabecera__nav__lista__home:hover {
-  transform: scale(2);
+  transform: scale(1.25);
   transition: 2s;
-  background-color: rgb(241, 234, 232);
   border-radius: 1px rgb(138, 136, 136);
 }
 
@@ -511,9 +510,8 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   text-decoration: none;
 }
 .pie .pie__navhome .pie__navhome__lista:hover {
-  transform: scale(2);
+  transform: scale(1.25);
   transition: 2s;
-  background-color: rgb(241, 234, 232);
   border-radius: 1px rgb(138, 136, 136);
 }
 @media screen and (max-width: 780px) {
