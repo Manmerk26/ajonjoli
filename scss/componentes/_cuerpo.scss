@@ -250,6 +250,12 @@
                 font-size:map-get($font-parrafo, secundario);
                 @include flex(column, center);
                 justify-content: center; 
+                p{
+                    img{
+                        height: 3rem;
+                        width: 3rem;
+                    }
+                }
                 @media screen and (max-width: 780px){
                     margin-left: 27.5%;
                     font-size: map-get($font-parrafo,en-px-g);

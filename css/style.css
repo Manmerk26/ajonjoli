@@ -357,6 +357,10 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   align-items: center;
   justify-content: center;
 }
+.grid-contenedor main .cuerpo-contact1 .cuerpo-contact__der p img {
+  height: 3rem;
+  width: 3rem;
+}
 @media screen and (max-width: 780px) {
   .grid-contenedor main .cuerpo-contact1 .cuerpo-contact__der {
     margin-left: 27.5%;
