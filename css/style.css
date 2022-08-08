@@ -238,13 +238,13 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto {
   border: 2px solid rgb(53, 28, 28);
-  padding-top: 2rem;
   align-self: center;
   background-color: rgb(241, 234, 232);
   margin: auto;
   height: 90%;
   width: 95%;
-  font-size: 2rem;
+  font-size: 26px;
+  justify-content: space-evenly;
 }
 @media screen and (max-width: 780px) {
   .grid-contenedor main .cuerpo-nos__contenedor .cuerpo-nos__texto {

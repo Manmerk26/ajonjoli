@@ -143,14 +143,14 @@
             }
             .cuerpo-nos__texto{
                 border: 2px solid rgb(53, 28, 28);
-                padding-top: 2rem;
                 align-self: center;
                 background-color: $bg-princ;
                 @extend %flexcol;
                 margin: auto;
                 height: 90%;
                 width: 95%;
-                font-size: map-get($font-parrafo,secundario) ;
+                font-size: 26px ;
+                justify-content: space-evenly;
                 @extend %textocent;
                 @media screen and (max-width: 780px){
                     flex-direction: column;
