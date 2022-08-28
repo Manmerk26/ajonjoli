@@ -1,4 +1,4 @@
-
+//Trabajo de simulador interactivo
 let entrada = parseFloat( prompt("Ingrese el producto"));
 while (entrada != 'ESC'){
 switch(entrada){
