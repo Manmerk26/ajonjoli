@@ -38,3 +38,4 @@ let precio = calcularPrecio(entrada,cantidad);
 alert ("usted a comprado"+" "+entrada +" "+ "al precio de" + " " +precio);
 contacto = prompt("Ingrese su contacto y nos comunicaremos a la brevedad");
 alert ("Gracias por visitarnos");
+//hacer array
