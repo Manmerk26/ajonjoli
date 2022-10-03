@@ -12,6 +12,12 @@
     <meta property="og:" content="Creaciones Ajonjoli es un sitio donde plasmamos tus ideas en papel/imagen" >
     <meta property="og:" content="http://creacionesajonjoli.000webhostapp.com/imagenes/imagenlogo.jpeg">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script defer src="/index.js"></script>
     <title>Creaciones Ajonjoli-porfolio</title>
 </head>
 <body class="grid-contenedor">
@@ -28,9 +34,9 @@
             <a href="../pages/mas.html" class= "cabecera__nav__lista__home">Mas</a>
         </nav>
     </header>
-
+<main>
     <!--cuerpo-->
-    <main class="cuepo-porf">
+   <!--  <main class="cuepo-porf">
 
         <h1 class="cuerpo-porf__titulo">Porfolio</h1>
         
@@ -62,7 +68,90 @@
                 </div>
             
         
+        </div> -->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tienda Ajonjoli</a>
+                <!-- Button trigger modal -->
+                <button id="toggleMyModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Ver carrito de compras <i class="bi bi-bag-check-fill"></i>
+                </button>
+    
+    
+    
+                </div>
+            </div>
+        </nav>
+        
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Total</th>
+                                    <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="items"></tbody>
+                                <tfoot>
+                                    <tr id="footer">
+                                    <th scope="row" colspan="6">Carrito vacío - comience a comprar!</th>
+                                    </tr>
+                                </tfoot>
+                                </table>
+                            <div class="row" id="cards"></div>
+                        </div>
+                    
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Terminar compra</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    
+    
+        <section class="d-flex justify-content-center mt-5">
+            <article class="container">
+                <div id="contenedor-productos" class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="card m-3 p-3">
+                        <img src="../imagenes/tarjeta-baby-shower.webp" class="card-img-top" alt="Babyshower">
+                        <div class="card-body">
+                            <h5>Babyshowers</h5>
+                            <p>$80</p>
+                            <button class="btn btn-success">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     
     <!--footer-->
@@ -96,6 +185,6 @@
         <p class= "pie__texto-ubic">Ajonjoli Creaciones Ubicacion:Perez, Santa Fe, Argentina.
         </p>
     </footer>
-    <script src="/index.js"></script>
+    
 </body>
 </html>

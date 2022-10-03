@@ -1,0 +1,42 @@
+[
+    {"id": 1,
+    "nombre": "Babyshowers", 
+    "precio": 50,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/tarjeta-baby-shower.webp"},
+
+    {"id": 2,
+    "nombre": "Cumpleaños" ,
+    "precio": 4500,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/felizcumple.jpeg"},
+
+    {"id": 3,
+    "nombre":"Comuniones" , 
+    "precio": 200,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/comunion.jpeg"},
+
+    {"id": 4,
+    "nombre":"Props", 
+    "precio":80 ,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/props.jpeg"},
+
+    {"id": 5,
+    "nombre":"Bautismos" , 
+    "precio": 5500,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/bautismo.jpeg"},
+
+    {"id": 6,
+    "nombre":"Books" , 
+    "precio": 3200,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/brisa.jpg"},
+
+    {"id": 7,
+    "nombre": "Gigantografias", 
+    "precio": 7000,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/gigantografias.jpeg"},
+
+    {"id": 8,
+    "nombre": "InvitacionesDigitales", 
+    "precio": 1300,
+    "foto":"http://creacionesajonjoli.000webhostapp.com/imagenes/invitacion-digital.jpg"}
+    
+]
