@@ -114,6 +114,11 @@ function dibujarCarrito() {
                 dibujarCarrito();
             
         });
+            /* let botonLimpiarLocal = document.getElementsByClassName (`checkoutBtn`);
+
+            botonLimpiarLocal.addEventListener(`click`, () =>{
+                localStorage.clear
+            } ); */
         
     });
 
