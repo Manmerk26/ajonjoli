@@ -127,7 +127,8 @@ function dibujarCarrito() {
     elementosCarrito.length == 0 ? contenedorFooterCarrito.innerHTML = `<th scope="row" colspan="6">Carrito vacío - comience a comprar!</th>` : contenedorFooterCarrito.innerHTML = `<th scope="row" colspan="6">Total de la compra: ${estandarPesosArg.format(totalCompra)}</th>` ;
     
 
-     localStorage.setItem('carrito', JSON.stringify(elementosCarrito));//Guardar producto en el local storage  
+     localStorage.setItem('carrito', JSON.stringify(elementosCarrito));//Guardar producto en el local storage 
+     
 }
 
 
@@ -174,8 +175,12 @@ function crearCard(producto) {
         let elementoExistente = 
             elementosCarrito.find((elem) => elem.producto.id == producto.id);
         
-            elementoExistente ? elementoExistente.cantidad+=1 : elementoCarrito = new ElementoCarrito(producto, 1);
-            elementosCarrito.push(elementoCarrito);
+            if(elementoExistente) {
+                elementoExistente.cantidad+=1;
+            } else {
+                let elementoCarrito = new ElementoCarrito(producto, 1);
+                elementosCarrito.push(elementoCarrito);
+            } 
 
 
         dibujarCarrito();

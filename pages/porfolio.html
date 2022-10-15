@@ -35,41 +35,7 @@
         </nav>
     </header>
 <main>
-    <!--cuerpo-->
-   <!--  <main class="cuepo-porf">
-
-        <h1 class="cuerpo-porf__titulo">Porfolio</h1>
-        
-        <div class="cuerpo-porf__lista">
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Babyshowers</h2>
-                    <img src="../imagenes/tarjeta-baby-shower.webp" alt="imagenesbabyshowers">
-                </div>
-                    <div class="cuerpo-porf__lista__item">
-                    <h2 >Cumpleaños</h2><img src="../imagenes/felizcumple.jpeg" alt="imagenescumpleaños">
-                </div>        
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Props</h2><img src="../imagenes/props.jpeg" alt="imagenesprops">
-                </div>
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Comuniones</h2><img src="../imagenes/comunion.jpeg" alt="imagenescomuniones">
-                </div>
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Bautismos</h2><img src="../imagenes/bautismo.jpeg" alt="imagenesbautismos">
-                </div>
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Books</h2><img src="../imagenes/brisa.jpg" alt="imagenesbooks">
-                </div> 
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Gigantografias</h2><img src="../imagenes/gigantografias.jpeg" alt="imagenesgigantografias">
-                </div> 
-                    <div class="cuerpo-porf__lista__item">
-                    <h2>Invitaciones Digitales</h2><img src="../imagenes/invitacion-digital.jpg" alt="imagenesinvitacionesdigitales">
-                </div>
-            
-        
-        </div> -->
-
+    
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Tienda Ajonjoli</a>
@@ -117,7 +83,9 @@
                     </div>
                     <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary">Terminar compra</button>
+                    <a href="/pages/formulario.html">
+                        <button type="button" class="btn btn-primary checkoutBtn">Proceder al pago</button>
+                      </a>
                     </div>
                 </div>
             </div>
@@ -141,16 +109,30 @@
         
 
 
+ <!-- Cart Modal -->
 
+ <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="col-12 col-md-6 col-xl-4cartModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog modal-dialog-scrollable">
+   <div class="modal-content">
+     <div class="modal-header">
+       <i class="bi bi-cart-fill me-1 fs-5"></i>
+       <h5 class="modal-title" id="cartModalLabel">Carrito</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     </div>
+     <div class="modal-body">
+       <ul class="container cart">
 
-
-
-
-
-
-
-
-
+       </ul>
+     </div>
+     <div class="modal-footer d-flex justify-content-between">
+       <ul class="subTotal list-unstyled align-items-center justify-content-center"></ul>
+       <button type="button" class="btn btn-secondary resetCart">Vaciar carrito</button>
+       
+     </div>
+   </div>
+ </div>
+</div>
 
     </main>
     
