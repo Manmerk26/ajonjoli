@@ -1,4 +1,17 @@
 
+ 
+  carrito= JSON.parse(localStorage.getItem('carrito')) || [];
+  let detalleCompra = ""; 
+  for (i=0;i<carrito.length;i++){
+    detalleCompra+= `${elemento.producto}
+    ${elemento.cantidad}
+    ${elemento.cantidad*elemento.precio}=$${elemento.total}` }
+ 
+  mensaje = document.getElementById('mensaje');
+  mensaje.value= detalleCompra;
+
+
+
 (() => {
     'use strict'
   
@@ -103,14 +116,16 @@
         });
         }
         
-            
-        
-        
-        
         form.classList.add('was-validated')
       }, false)
       })
     })()
+
+    let botonLimpiarLocal = document.getElementById (`enviar-solicitud`);
+
+    botonLimpiarLocal.onclick= () => {
+        localStorage.clear();
+    };
 
 
     

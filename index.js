@@ -61,12 +61,6 @@ cargarCarrito();
   for (i=0;i<carrito.length;i++){
     elementosCarrito.push(new ElementoCarrito(carrito[i].producto,carrito[i].cantidad))} ;
  
-/* if(localStorage.getItem('carrito')){
-    carrito = JSON.parse(localStorage.getItem('carrito'));
-    for (i=0;i<carrito.length;i++){
-        elementosCarrito.push(new ElementoCarrito(carrito[i].producto,carrito[i].cantidad))
-    }
-} */
 dibujarCarrito();
 dibujarCatalogoProductos();
 
@@ -114,11 +108,7 @@ function dibujarCarrito() {
                 dibujarCarrito();
             
         });
-            /* let botonLimpiarLocal = document.getElementsByClassName (`checkoutBtn`);
-
-            botonLimpiarLocal.addEventListener(`click`, () =>{
-                localStorage.clear
-            } ); */
+             
         
     });
 
