@@ -173,46 +173,48 @@
 }
 
 
-/*porfolio*/
+/*tienda*/
 
-.grid-contenedor{
+ .grid-contenedor{
     @include grid(grid, 100%, 0.5fr auto 1fr );
     grid-template-areas: "cabecera"
     "main-porf"
     "pie";
     main{
-        grid-area: main-porf;
-        .cuerpo-porf__titulo{
-            font-size: map-get($font-titulo, h1);
-            @include flex(column, center);;
+        font-size: 20px;
+        .card-body{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
         }
-        .cuerpo-porf__lista{
-            margin: auto;
-            font-size: map-get($font-parrafo, principal);
-            height: auto;
-            width: 85%;
-            @include flex(column, center);
-            text-align: center;
-            @media screen and (max-width: 780px){
-                font-size: map-get($font-parrafo,secundario);
-            }
-            .cuerpo-porf__lista__item{
-                margin-top: 1rem;
-                border: $border-hover;
-            }
-            .cuerpo-porf__lista__item img{
-                height: 30rem;
-                width: 40rem;
-                @media screen and (max-width: 780px){
-                    height: 15rem;
-                    width: 20rem;
-                    
-                }
-            }   
+        .card-img, .card-img-bottom, .card-img-top {
+            width: 15rem;
+            height: 15rem;
         }
+        }
+        .swal-text {
+            font-size: 25px;
+        }
+        .swal-button {
+            font-size: 20px;
+            color: $color-texto ;
     }
 }
 
+/* formulario */
+.formu{
+    background-image: url("/imagenes/fondo-abstracto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .lead {
+        font-size: 1.5rem;
+}
+    .bg-body{
+        background-image: url("/imagenes/fondo-abstracto.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}
 
 /*contacto*/
 

@@ -266,68 +266,47 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   }
 }
 
-/*porfolio*/
-
-
-.card{display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-.card img {
-  height: 30%;
-  width: 30%;
-}
-.card-body{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* .grid-contenedor {
+/*tienda*/
+.grid-contenedor {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 0.5fr auto 1fr;
   grid-template-areas: "cabecera" "main-porf" "pie";
 }
 .grid-contenedor main {
-  grid-area: main-porf;
+  font-size: 20px;
 }
-.grid-contenedor main .cuerpo-porf__titulo {
-  font-size: 6rem;
+.grid-contenedor main .card-body {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.grid-contenedor main .cuerpo-porf__lista {
-  margin: auto;
-  font-size: 3rem;
-  height: auto;
-  width: 85%;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
-@media screen and (max-width: 780px) {
-  .grid-contenedor main .cuerpo-porf__lista {
-    font-size: 2rem;
-  }
+.grid-contenedor main .card-img, .grid-contenedor main .card-img-bottom, .grid-contenedor main .card-img-top {
+  width: 15rem;
+  height: 15rem;
 }
-.grid-contenedor main .cuerpo-porf__lista .cuerpo-porf__lista__item {
-  margin-top: 1rem;
-  border: solid 2px rgb(138, 136, 136);
+.grid-contenedor .swal-text {
+  font-size: 25px;
 }
-.grid-contenedor main .cuerpo-porf__lista .cuerpo-porf__lista__item img {
-  height: 30rem;
-  width: 40rem;
+.grid-contenedor .swal-button {
+  font-size: 20px;
+  color: rgb(53, 28, 28);
 }
-@media screen and (max-width: 780px) {
-  .grid-contenedor main .cuerpo-porf__lista .cuerpo-porf__lista__item img {
-    height: 15rem;
-    width: 20rem;
-  }
-} */
+
+/* formulario */
+.formu {
+  background-image: url("/imagenes/fondo-abstracto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formu .lead {
+  font-size: 1.5rem;
+}
+.formu .bg-body {
+  background-image: url("/imagenes/fondo-abstracto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*contacto*/
 .grid-contenedor {
@@ -529,6 +508,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 }
 .pie .pie__navhome .pie__navhome__lista {
   text-decoration: none;
+  color: rgb(53, 28, 28);
 }
 .pie .pie__navhome .pie__navhome__lista:hover {
   transform: scale(1.25);

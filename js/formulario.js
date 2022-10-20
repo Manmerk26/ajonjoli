@@ -3,9 +3,13 @@
   carrito= JSON.parse(localStorage.getItem('carrito')) || [];
   let detalleCompra = ""; 
   for (i=0;i<carrito.length;i++){
-    detalleCompra+= `${elemento.producto}
-    ${elemento.cantidad}
-    ${elemento.cantidad*elemento.precio}=$${elemento.total}` }
+    detalleCompra+= `
+Producto:${carrito[i].producto.nombre}
+Cantidad:${carrito[i].cantidad} 
+Precio:$${carrito[i].producto.precio}
+Total:$${carrito[i].cantidad*carrito[i].producto.precio}
+                     ` }
+
  
   mensaje = document.getElementById('mensaje');
   mensaje.value= detalleCompra;
@@ -60,6 +64,7 @@
             email: email.value,
             telefono: telefono.value,
             direccion: direccion.value,
+            mensaje:mensaje.value
             }
         };
     

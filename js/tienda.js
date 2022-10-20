@@ -42,7 +42,7 @@ const contenedorFooterCarrito = document.querySelector("#footer");
 
 const traerData = async () =>{
 try{
-    const reponse = await fetch (`/data.json`);
+    const reponse = await fetch (`/json/data.json`);
     const data = await reponse.json();
     data.forEach(elemento => {
         productos.push(new Producto(elemento));
