@@ -95,7 +95,7 @@ Total:$${carrito[i].cantidad*carrito[i].producto.precio}
                         title: '<h5 class="text-info">Formulario enviado</h5>',
                         showConfirmButton: true,
                     }).then(function () {
-                        window.location.href = "../ajonjoli/pages/porfolio.html";
+                        window.location.href = "../index.html";
                     })
 
                 }, 2000);
