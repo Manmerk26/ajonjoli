@@ -30,7 +30,7 @@ Total:$${carrito[i].cantidad*carrito[i].producto.precio}
           event.preventDefault()
           event.stopPropagation()
           Swal.fire({
-            imageUrl: '/imagenes/imagenlogo.jpeg',
+            imageUrl: '../imagenes/imagenlogo.jpeg',
             imageHeight: 100,
             imageWidth: 100,
             background: '#d6d6d6',
@@ -87,7 +87,7 @@ Total:$${carrito[i].cantidad*carrito[i].producto.precio}
                 setTimeout(() => {
                     enviarSolicitud.value = 'Enviar';
                     Swal.fire({
-                        imageUrl: '/imagenes/imagenlogo.jpeg',
+                        imageUrl: '../imagenes/imagenlogo.jpeg',
                         imageHeight: 80,
                         imageWidth: 80,
                         background: '#d6d6d6',
@@ -110,7 +110,7 @@ Total:$${carrito[i].cantidad*carrito[i].producto.precio}
             enviarSolicitud.value = 'Enviar';
             console.log(error)
             Swal.fire({
-                imageUrl: '/imagenes/imagenlogo.jpeg',
+                imageUrl: '../imagenes/imagenlogo.jpeg',
                 imageHeight: 80,
                 imageWidth: 80,
                 background: '#d6d6d6',
