@@ -77,7 +77,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 
 /*index*/
 .grid-contenedor {
-  background-image: url("/imagenes/fondo-abstracto.png");
+  background-image: url("../imagenes/fondo-abstracto.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
@@ -295,7 +295,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
 
 /* formulario */
 .formu {
-  background-image: url("/imagenes/fondo-abstracto.png");
+  background-image: url("../imagenes/fondo-abstracto.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -303,7 +303,7 @@ header .cabecera__nav .cabecera__nav__lista__home:hover {
   font-size: 1.5rem;
 }
 .formu .bg-body {
-  background-image: url("/imagenes/fondo-abstracto.png");
+  background-image: url("../imagenes/fondo-abstracto.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
